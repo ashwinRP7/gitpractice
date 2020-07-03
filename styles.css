@@ -1,9 +1,16 @@
-div {
-	margin-left: 200px;
-	margin-bottom: 20px;
-	margin-top: 10px;
+div.gallery {
+	float: left;
+	width: 300px;
+	margin: 5px;
+	padding: 70px;
 }
-img {
-	width: 90px;
-	height: 80px;
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.media_name{
+	padding: 15px;
+	text-align: center;
+	font-size: 60px;
 }
