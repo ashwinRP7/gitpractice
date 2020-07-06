@@ -3,6 +3,8 @@ div.gallery {
 	width: 300px;
 	margin: 5px;
 	padding: 70px;
+	position: relative;
+	z-index: -1
 }
 div.gallery img {
 	width: 100%;
