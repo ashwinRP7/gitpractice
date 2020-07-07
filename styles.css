@@ -18,3 +18,94 @@ div.media_name {
 	position: absolute;
 	z-index: 1;
 }
+
+div.transformation {
+	height: 500px;
+	width: 100%;
+	background-color: grey;
+	border: 2px solid white;
+	position: relative;
+}
+
+div.animation {
+	height: 500px;
+	width: 100%;
+	background-color: grey;
+	position: relative;
+}
+
+hr.dottedline {
+	border-top: 8px dashed white;
+	position: absolute;
+	top: 240px;
+	width: 100%;
+	z-index: 10;
+}
+
+div.fig1 {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-color: white;
+
+}
+.image1 {
+	padding:10px;
+	height: 200px;
+	width: 200px;
+	transition: transform 2s 1s;
+}
+
+.image1:hover {
+	transform: translateX(300px);
+}	
+
+div.fig2 {
+	position: absolute;
+	top : 220px;
+	left: 10px;
+	background-color: white;
+}
+
+.image2{
+	padding:10px;
+	height: 200px;
+	width: 200px;
+	transition: transform 2s 1s;
+}
+
+.image2:hover {
+	transform: translateX(300px) rotate(360deg);
+	transform-origin: 50px,50px;
+}
+
+.riderimage {
+	position: absolute;
+	top: 40px;
+	left: -0px;
+	animation-name: rider;
+	animation-fill-mode: both;
+	animation-duration: 5s;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0, 1.38, 1, -0.4);
+}
+
+
+@keyframes rider {
+	from{transform:translateX(-200px);}
+	to{transform: translateX(1860px);}
+}
+
+.jumperimage {
+	position: absolute;
+	top: 320px;
+	left: -0px;
+	animation: rider 5s 0.5s both infinite ease-in , jump 0.5s 4s both infinite ease;
+}
+
+@keyframes jump {
+	0%{top: 320px}
+	50%{top : 170px;}
+	100%{top : 320px;}
+}
