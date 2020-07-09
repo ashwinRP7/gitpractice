@@ -4,7 +4,9 @@ div.gallery {
 	margin: 5px;
 	padding: 70px;
 	position: relative;
-	z-index: -1
+	box-sizing: border-box;
+	z-index: -1;
+	
 }
 div.gallery img {
 	width: 100%;
@@ -14,7 +16,7 @@ div.gallery img {
 div.media_name {
 	padding: 15px;
 	text-align: center;
-	font-size: 60px;
+	font-size: 30px;
 	position: absolute;
 	z-index: 1;
 }
@@ -97,11 +99,16 @@ div.fig2 {
 	to{transform: translateX(1860px);}
 }
 
+@-webkit-keyframes rider {
+	from {transform:translateX(-200px);}
+	to{transform:translateX(1860px);}
+}
+
 .jumperimage {
 	position: absolute;
 	top: 320px;
 	left: -0px;
-	animation: rider 5s 0.5s both infinite ease-in , jump 0.5s 4s both infinite ease;
+	animation: rider 5s 0.5s both infinite ease-in , jump 0.5s 4s both ease;
 }
 
 @keyframes jump {
@@ -109,3 +116,17 @@ div.fig2 {
 	50%{top : 170px;}
 	100%{top : 320px;}
 }
+
+@-webkit-keyframes jump {
+	0%{top: 320px}
+	50%{top : 170px;}
+	100%{top : 320px;}
+}
+
+@media screen and (max-width: 700px){
+	@keyframes rider {
+		from {transform: translateX(-200px);}
+		to {transform: translateX(900px);}
+	}
+}
+
