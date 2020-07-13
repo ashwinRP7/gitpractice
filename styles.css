@@ -37,7 +37,7 @@ div.animation {
 }
 
 hr.dottedline {
-	border-top: 8px dashed white;
+	border: 8px dashed white;
 	position: absolute;
 	top: 240px;
 	width: 100%;
