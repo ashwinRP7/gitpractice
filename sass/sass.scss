@@ -1,12 +1,7 @@
 //variavles
+@import "variables";
+@import "mixins";
 
-$greyColor : #808080;
-$stripColor : #FFFFFF;
-$themeColor : #00FFFF;
-$fontColor : #000000;
-
-$normalFontSize : 24px;
-$headingFontSize : 70px;
 
 #heading {
     font-size: $headingFontSize;
@@ -57,25 +52,7 @@ header {
     border: 8px dashed $stripColor
 }
 
-@mixin sass-mixin {
-        position: relative;
-        width: 100%;
-        color: $stripColor;
-        img {
-            width: 100%;
-            height: auto;
-        }
-        span {
-            position: absolute;
-            width: 100%;
-            top: 50px;
-            font-size: $headingFontSize;
-            font-weight: bold;
-        }
-        span.title {
-            left : 1090px;
-        }
-}
+
 
 .image-1 {
     @include sass-mixin;

@@ -1,0 +1,19 @@
+@mixin sass-mixin {
+    position: relative;
+    width: 100%;
+    color: $stripColor;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    span {
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        font-size: $headingFontSize;
+        font-weight: bold;
+    }
+    span.title {
+        left : 1090px;
+    }
+}
