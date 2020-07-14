@@ -17,3 +17,11 @@
         left : 1090px;
     }
 }
+
+@mixin clearFix {
+    &:after {
+        content : "";
+        display: block;
+        clear : both;
+    }
+}

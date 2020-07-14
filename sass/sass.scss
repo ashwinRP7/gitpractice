@@ -10,6 +10,24 @@
 
 header {
     background: $themeColor;
+    ul{
+        width: 100%;
+        @include clearFix;
+    }
+
+    li{
+        float: left;
+        width: 25%;
+    }
+
+    a{
+        padding : 16px;
+        display: block;
+        text-align: center;
+        &:hover {
+            background : $stripColor;
+        }
+    }
 }
 
 #normalText {
