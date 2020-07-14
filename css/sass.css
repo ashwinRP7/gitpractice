@@ -3,6 +3,10 @@
   color: #000000;
 }
 
+header {
+  background: #00FFFF;
+}
+
 #normalText {
   font-size: 24px;
   color: #000000;
@@ -17,11 +21,95 @@
           box-sizing: border-box;
 }
 
+#road .first-mario {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  -webkit-animation: drive 5s ease-in-out 1s infinite both;
+          animation: drive 5s ease-in-out 1s infinite both;
+}
+
+#road img {
+  position: absolute;
+  top: 398px;
+  left: 0px;
+  -webkit-animation: drive 5s ease 1s infinite both;
+          animation: drive 5s ease 1s infinite both;
+}
+
+@-webkit-keyframes drive {
+  0% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  100% {
+    -webkit-transform: translateX(1860px);
+            transform: translateX(1860px);
+  }
+}
+
+@keyframes drive {
+  0% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  100% {
+    -webkit-transform: translateX(1860px);
+            transform: translateX(1860px);
+  }
+}
+
 #dashedLine {
   position: absolute;
   top: 350px;
   left: 0px;
   width: 100%;
   border: 8px dashed #FFFFFF;
+}
+
+.image-1 {
+  position: relative;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.image-1 img {
+  width: 100%;
+  height: auto;
+}
+
+.image-1 span {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.image-1 span.title {
+  left: 1090px;
+}
+
+.image-2 {
+  position: relative;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+.image-2 img {
+  width: 100%;
+  height: auto;
+}
+
+.image-2 span {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.image-2 span.title {
+  left: 1090px;
 }
 /*# sourceMappingURL=sass.css.map */
