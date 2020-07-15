@@ -81,3 +81,25 @@ header {
     @include sass-mixin;
    
 }
+
+.boxes {
+    width : 100%;
+    @include clearFix;
+}
+
+.box {
+    width : 300px;
+    height : 400px; 
+    box-sizing : border-box;
+    float: left;
+}
+
+.blue-box {
+    @extend .box;
+    background: $blueBox;
+}
+
+.red-box{
+    @extend .box;
+    background:$redBox;
+}
